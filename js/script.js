@@ -31,21 +31,14 @@ $(document).ready(() => {
         valVisor = '';
     })
 
-    $('#igualA').on("click", (e) => {
+    $('#igualA').on("click", () => {
         resultado = eval(resultado)
         visor.val(resultado);
     })
 
-    $('#limpar').on("click", (e) => {
+    $('#limpar').on("click", () => {
         visor.val(0);
         resultado = null;
     })
-
-    /*
-    $('#backspace').on("click", (e) => {
-        resultado -= resultado;
-        visor.val(resultado)
-    })
-    */
 
 })
